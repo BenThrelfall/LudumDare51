@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class AbilityCard : ScriptableObject {
 
     public string cardName;
+    public Sprite cardArt;
 
     public abstract void DoAbility();
 

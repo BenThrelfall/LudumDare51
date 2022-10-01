@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: IncreaseSpeed
   m_EditorClassIdentifier: 
   cardName: Speed
+  cardArt: {fileID: 21300000, guid: 7a07901ab22c1494b8db0770cf571d12, type: 3}
   amount: 1

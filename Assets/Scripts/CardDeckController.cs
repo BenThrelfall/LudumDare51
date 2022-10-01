@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class CardDeckController : MonoBehaviour {
 
@@ -9,6 +10,9 @@ public class CardDeckController : MonoBehaviour {
 
     [SerializeField] TextMeshProUGUI cardOneText;
     [SerializeField] TextMeshProUGUI cardTwoText;
+
+    [SerializeField] Image cardOneImage;
+    [SerializeField] Image cardTwoImage;
 
     AbilityCard cardOne;
     AbilityCard cardTwo;
@@ -49,6 +53,9 @@ public class CardDeckController : MonoBehaviour {
 
             cardOneText.text = cardOne.cardName;
             cardTwoText.text = cardTwo.cardName;
+
+            cardOneImage.sprite = cardOne.cardArt;
+            cardTwoImage.sprite = cardTwo.cardArt;
 
             yield return new WaitForSeconds(10);
 

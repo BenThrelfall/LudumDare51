@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: IncreaseFireRate
   m_EditorClassIdentifier: 
   cardName: Fire Rate
+  cardArt: {fileID: 21300000, guid: 42935feee29d4ba48adc0342d39c51b2, type: 3}
   amount: 10

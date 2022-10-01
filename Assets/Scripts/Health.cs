@@ -9,6 +9,8 @@ public class Health : MonoBehaviour {
     [SerializeField] float currentHealth; 
     public float CurrentHealth { get {return currentHealth; } private set { currentHealth = Mathf.Min(value, maxHealth); } }
 
+    public event Action OnDie;
+
     private void Start() {
         CurrentHealth = maxHealth;
     }
@@ -33,7 +35,7 @@ public class Health : MonoBehaviour {
     }
 
     private void Die() {
-        Destroy(gameObject); //TEMP
+        OnDie.Invoke();
     }
 
 }
