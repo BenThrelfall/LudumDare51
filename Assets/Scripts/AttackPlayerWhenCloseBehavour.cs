@@ -8,8 +8,8 @@ public class AttackPlayerWhenCloseBehavour : MonoBehaviour {
     Transform target;
     Health targetHealth;
     public float squaredRange;
-    public float damage;
-    public float attackCooldown;
+    public float damageCoefficient;
+    public float attackCooldownCoefficient;
 
     // Start is called before the first frame update
     void Start() {
@@ -23,10 +23,10 @@ public class AttackPlayerWhenCloseBehavour : MonoBehaviour {
         for(;;) {
 
             if ((transform.position - target.position).sqrMagnitude <= squaredRange) {
-                targetHealth.TakeDamage(damage);
+                targetHealth.TakeDamage(GlobalPlayer.instance.baseEnemyDamage * damageCoefficient);
             }
 
-            yield return new WaitForSeconds(attackCooldown);
+            yield return new WaitForSeconds(GlobalPlayer.instance.baseEnemyAttackCooldown * attackCooldownCoefficient);
         }
 
     }

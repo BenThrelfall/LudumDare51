@@ -18,7 +18,7 @@ public class BasicCannonBehavour : MonoBehaviour{
             yield return new WaitForSeconds(60 / (fireRateCoefficient * GlobalPlayer.instance.baseFireRate));
 
             Vector2 bulletDirection = Random.insideUnitCircle;
-            GameObject projectileInstance = Instantiate(projectile, transform.position + (Vector3)bulletDirection.normalized, Quaternion.identity);
+            GameObject projectileInstance = Instantiate(projectile, transform.position + (Vector3)bulletDirection.normalized * 0.8f, Quaternion.identity);
 
             projectileInstance.GetComponent<Rigidbody2D>().velocity = bulletDirection.normalized * (GlobalPlayer.instance.baseProjectileSpeed * projectileSpeedCoefficient);
         }

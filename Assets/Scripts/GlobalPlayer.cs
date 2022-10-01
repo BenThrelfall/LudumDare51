@@ -7,6 +7,8 @@ public class GlobalPlayer : MonoBehaviour {
     public static GlobalPlayer instance;
     public GameObject weaponHolder;
 
+    public float playerMoveSpeed;
+
     /// <summary>
     /// Base fire rate in rounds per minute
     /// </summary>
@@ -19,6 +21,12 @@ public class GlobalPlayer : MonoBehaviour {
 
     public float baseProjectileDamage;
 
+    public Health playerHealth;
+
+    public float baseEnemyAttackCooldown;
+    public float baseEnemyDamage;
+    public float baseEnemyMoveSpeed;
+
     private void Awake() {
         instance = this;
     }
@@ -26,5 +34,7 @@ public class GlobalPlayer : MonoBehaviour {
     public void AddWeapon(GameObject weapon) { 
         Instantiate(weapon, weaponHolder.transform);
     }
+
+
 
 }

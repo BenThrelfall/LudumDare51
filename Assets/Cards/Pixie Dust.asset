@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52287ced6df24a74d917800b1a08c6c9, type: 3}
+  m_Name: Pixie Dust
+  m_EditorClassIdentifier: 
+  cardName: Pixie Dust
+  cardArt: {fileID: 21300000, guid: 42935feee29d4ba48adc0342d39c51b2, type: 3}
+  cards:
+  - {fileID: 11400000, guid: 2b18a63387bf3b540ba6b787d7176b1d, type: 2}
+  - {fileID: 11400000, guid: 7f77a85fb1026d340baa823e868a6b5e, type: 2}
+  - {fileID: 11400000, guid: 700c39ed453fdd64c95fa3acf8843415, type: 2}

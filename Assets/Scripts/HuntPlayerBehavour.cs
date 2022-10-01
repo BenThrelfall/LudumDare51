@@ -5,7 +5,7 @@ using UnityEngine;
 public class HuntPlayerBehavour : MonoBehaviour {
 
     Transform target;
-    public float speed;
+    public float speedCoefficent;
 
     public Rigidbody2D rbod;
 
@@ -19,7 +19,7 @@ public class HuntPlayerBehavour : MonoBehaviour {
 
         Vector2 movementVector = (target.position - transform.position).normalized;
 
-        rbod.velocity = movementVector * speed;
+        rbod.velocity = movementVector * GlobalPlayer.instance.baseEnemyMoveSpeed * speedCoefficent;
 
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public float speed;
     [SerializeField] Rigidbody2D rbod;
 
     // Update is called once per frame
@@ -12,6 +11,6 @@ public class PlayerMovement : MonoBehaviour {
 
         Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-        rbod.velocity = movementVector.normalized * speed;
+        rbod.velocity = movementVector.normalized * GlobalPlayer.instance.playerMoveSpeed;
     }
 }
