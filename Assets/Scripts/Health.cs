@@ -6,8 +6,12 @@ using UnityEngine;
 public class Health : MonoBehaviour {
 
     public float maxHealth;
-    private float currentHealth;
+    [SerializeField] float currentHealth; 
     public float CurrentHealth { get {return currentHealth; } private set { currentHealth = Mathf.Min(value, maxHealth); } }
+
+    private void Start() {
+        CurrentHealth = maxHealth;
+    }
 
     public void TakeDamage(float amount) {
         CurrentHealth -= amount;
