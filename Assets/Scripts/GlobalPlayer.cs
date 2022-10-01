@@ -5,6 +5,7 @@ using UnityEngine;
 public class GlobalPlayer : MonoBehaviour {
 
     public static GlobalPlayer instance;
+    public GameObject weaponHolder;
 
     /// <summary>
     /// Base fire rate in rounds per minute
@@ -20,6 +21,10 @@ public class GlobalPlayer : MonoBehaviour {
 
     private void Awake() {
         instance = this;
+    }
+
+    public void AddWeapon(GameObject weapon) { 
+        Instantiate(weapon, weaponHolder.transform);
     }
 
 }
