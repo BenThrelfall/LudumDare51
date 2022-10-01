@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7809c7db1802ec4eb3f4ff7277a95d8, type: 3}
-  m_Name: DND_FireRate
+  m_Script: {fileID: 11500000, guid: 6c6eef84517f58a468ea6e32f40ef691, type: 3}
+  m_Name: DND_ProjSpeed
   m_EditorClassIdentifier: 
-  cardName: DND_FireRate
+  cardName: 
   cardArt: {fileID: 0}
-  amount: 20
+  amount: 0.2

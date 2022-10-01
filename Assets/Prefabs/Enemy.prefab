@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7171e877ec50d4249bce2391c99ab6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.9
+  speedCoefficent: 1
   rbod: {fileID: 1667167640851749853}
 --- !u!114 &1667167640851749856
 MonoBehaviour:
@@ -178,8 +178,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   squaredRange: 2
-  damage: 10
-  attackCooldown: 1
+  damageCoefficient: 20
+  attackCooldownCoefficient: 1
 --- !u!114 &5235979812992077920
 MonoBehaviour:
   m_ObjectHideFlags: 0

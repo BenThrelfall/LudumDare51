@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60eb11a8cc771b84da9dbe08b65beea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRateCoefficient: 1
-  projectileSpeedCoefficient: 1
+  fireRateCoefficient: 60
+  projectileSpeedCoefficient: 2
   projectile: {fileID: 9026540535214152198, guid: 91fcec9e9314cfa42863bcf01abadb1d, type: 3}

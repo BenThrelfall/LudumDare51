@@ -569,12 +569,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deck:
-  - {fileID: 11400000, guid: cbe3fbcf267f6d342bae9a1d7e0d9ff8, type: 2}
-  - {fileID: 11400000, guid: 6e92dab6e4493d2469e1b0bdca9c4898, type: 2}
-  - {fileID: 11400000, guid: cf5b0c73906f5d44592b4390b7c90a98, type: 2}
-  - {fileID: 11400000, guid: a2cd302850b16484ca72ca13d0eeb88f, type: 2}
-  - {fileID: 11400000, guid: e12a7444a90a0ac469c5f24d9b6a42d2, type: 2}
+  - {fileID: 11400000, guid: a8cc0206914f79749b6e4895cc01dcbe, type: 2}
+  - {fileID: 11400000, guid: 79eb75091fa71a94594e3953ef438f74, type: 2}
+  - {fileID: 11400000, guid: 971402f79406a744ea5d8474cb7b3270, type: 2}
   - {fileID: 11400000, guid: cc1982c08e886fc4fad239d6ff2ee3a2, type: 2}
+  - {fileID: 11400000, guid: e12a7444a90a0ac469c5f24d9b6a42d2, type: 2}
   cardOneText: {fileID: 284606153}
   cardTwoText: {fileID: 1923135638}
   cardOneImage: {fileID: 2087819628}
@@ -2012,9 +2011,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponHolder: {fileID: 1481634851}
   playerMoveSpeed: 1.2
-  baseFireRate: 60
-  baseProjectileSpeed: 2
-  baseProjectileDamage: 10
+  baseFireRate: 1
+  baseProjectileSpeed: 1
+  baseProjectileDamage: 1
   playerHealth: {fileID: 1839728065}
   baseEnemyAttackCooldown: 1
   baseEnemyDamage: 1
