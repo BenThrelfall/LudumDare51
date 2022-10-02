@@ -11,6 +11,9 @@ public class CardDeckController : MonoBehaviour {
     [SerializeField] TextMeshProUGUI cardOneText;
     [SerializeField] TextMeshProUGUI cardTwoText;
 
+    [SerializeField] TextMeshProUGUI cardOneDesc;
+    [SerializeField] TextMeshProUGUI cardTwoDesc;
+
     [SerializeField] Image cardOneImage;
     [SerializeField] Image cardTwoImage;
 
@@ -53,6 +56,9 @@ public class CardDeckController : MonoBehaviour {
 
             cardOneText.text = cardOne.cardName;
             cardTwoText.text = cardTwo.cardName;
+
+            cardOneDesc.text = cardOne.cardDescription;
+            cardTwoDesc.text = cardTwo.cardDescription;
 
             cardOneImage.sprite = cardOne.cardArt;
             cardTwoImage.sprite = cardTwo.cardArt;

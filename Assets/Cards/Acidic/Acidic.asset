@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a18634124bad24db0b4438102ab4be, type: 3}
-  m_Name: Thick Skin
+  m_Script: {fileID: 11500000, guid: 52287ced6df24a74d917800b1a08c6c9, type: 3}
+  m_Name: Acidic
   m_EditorClassIdentifier: 
-  cardName: Thick Skin
-  cardDescription: 'Heal
+  cardName: Acidic
+  cardDescription: 'Increased Damage
 
-    Increase Max Health'
+    Damage Nearby Enemies'
   cardArt: {fileID: 21300000, guid: 7a07901ab22c1494b8db0770cf571d12, type: 3}
-  currentHealthGain: 50
-  maxHealthGain: 50
+  cards:
+  - {fileID: 11400000, guid: 814d01fe7c7719d489bfa49a98b467e7, type: 2}
+  - {fileID: 11400000, guid: 2740c1ebfee009c4e81d403dc663993f, type: 2}

@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a18634124bad24db0b4438102ab4be, type: 3}
-  m_Name: Thick Skin
+  m_Script: {fileID: 11500000, guid: 9311ec5d4e8561045a8f876cda1d1534, type: 3}
+  m_Name: DND_Damage
   m_EditorClassIdentifier: 
-  cardName: Thick Skin
-  cardDescription: 'Heal
-
-    Increase Max Health'
-  cardArt: {fileID: 21300000, guid: 7a07901ab22c1494b8db0770cf571d12, type: 3}
-  currentHealthGain: 50
-  maxHealthGain: 50
+  cardName: DND
+  cardDescription: 
+  cardArt: {fileID: 0}
+  amount: 0.2

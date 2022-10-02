@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a18634124bad24db0b4438102ab4be, type: 3}
-  m_Name: Thick Skin
+  m_Script: {fileID: 11500000, guid: 6c6eef84517f58a468ea6e32f40ef691, type: 3}
+  m_Name: High Blood Pressure
   m_EditorClassIdentifier: 
-  cardName: Thick Skin
-  cardDescription: 'Heal
-
-    Increase Max Health'
+  cardName: High Blood Pressure
+  cardDescription: Increase Projectile Speed
   cardArt: {fileID: 21300000, guid: 7a07901ab22c1494b8db0770cf571d12, type: 3}
-  currentHealthGain: 50
-  maxHealthGain: 50
+  amount: 0.5

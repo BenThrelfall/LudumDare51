@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a18634124bad24db0b4438102ab4be, type: 3}
-  m_Name: Thick Skin
+  m_Script: {fileID: 11500000, guid: 46fc8c53c58aba74982979f6b2da39f5, type: 3}
+  m_Name: Blessed
   m_EditorClassIdentifier: 
-  cardName: Thick Skin
-  cardDescription: 'Heal
-
-    Increase Max Health'
-  cardArt: {fileID: 21300000, guid: 7a07901ab22c1494b8db0770cf571d12, type: 3}
-  currentHealthGain: 50
-  maxHealthGain: 50
+  cardName: Blessed
+  cardDescription: Become Blessed
+  cardArt: {fileID: 21300000, guid: 42935feee29d4ba48adc0342d39c51b2, type: 3}

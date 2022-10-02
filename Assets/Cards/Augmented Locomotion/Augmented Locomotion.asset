@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a18634124bad24db0b4438102ab4be, type: 3}
-  m_Name: Thick Skin
+  m_Script: {fileID: 11500000, guid: ddc866b0e3fabd947ba066e4623655d4, type: 3}
+  m_Name: Augmented Locomotion
   m_EditorClassIdentifier: 
-  cardName: Thick Skin
-  cardDescription: 'Heal
-
-    Increase Max Health'
-  cardArt: {fileID: 21300000, guid: 7a07901ab22c1494b8db0770cf571d12, type: 3}
-  currentHealthGain: 50
-  maxHealthGain: 50
+  cardName: Augmented Locomotion
+  cardDescription: Increased Move Speed
+  cardArt: {fileID: 21300000, guid: 42935feee29d4ba48adc0342d39c51b2, type: 3}
+  amount: 0.4

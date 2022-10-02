@@ -9,6 +9,8 @@ public class Health : MonoBehaviour {
     [SerializeField] float currentHealth; 
     public float CurrentHealth { get {return currentHealth; } private set { currentHealth = Mathf.Min(value, maxHealth); OnChangeHealth?.Invoke(); } }
 
+    public bool blessed = false;
+
     public event Action OnDie;
     public event Action OnChangeHealth;
 
@@ -36,6 +38,12 @@ public class Health : MonoBehaviour {
     }
 
     private void Die() {
+        if (blessed) {
+            blessed = false;
+            currentHealth = maxHealth * 0.5f;
+            return;
+        }
+
         OnDie?.Invoke();
     }
 

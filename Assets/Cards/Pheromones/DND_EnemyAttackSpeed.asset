@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DND_EnemyAttackSpeed
   m_EditorClassIdentifier: 
   cardName: DND
+  cardDescription: 
   cardArt: {fileID: 0}
-  amount: -0.1
+  amount: -0.2
