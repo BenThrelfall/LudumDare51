@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 4523162619721031487}
   - component: {fileID: -2071305775552326110}
   m_Layer: 8
-  m_Name: Enemy
+  m_Name: RobotTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7171e877ec50d4249bce2391c99ab6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedCoefficent: 1
+  speedCoefficent: 2
   rbod: {fileID: 1667167640851749853}
 --- !u!114 &1667167640851749856
 MonoBehaviour:

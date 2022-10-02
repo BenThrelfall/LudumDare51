@@ -16,7 +16,7 @@ MonoBehaviour:
   cardDescription: 'Increase Enemy Move Speed
 
     Decrease Enenmy Attack Speed'
-  cardArt: {fileID: 21300000, guid: 23e0b84b31a161847abe8c98e695f74b, type: 3}
+  cardArt: {fileID: 21300000, guid: e80911679a9b84f4c853f1868d4ab6a1, type: 3}
   cards:
   - {fileID: 11400000, guid: 2f09853f5c9e59044848bdd0f9574c8a, type: 2}
   - {fileID: 11400000, guid: f717c8384083ab74ab2e5fcbce1d2861, type: 2}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Replicative Frenzy
   cardDescription: Increase Fire Rate
-  cardArt: {fileID: 21300000, guid: 23e0b84b31a161847abe8c98e695f74b, type: 3}
+  cardArt: {fileID: 21300000, guid: e66f8e7d337f1734eb213d14cec77201, type: 3}
   amount: 0.5

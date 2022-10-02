@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Blessed
   cardDescription: Become Blessed
-  cardArt: {fileID: 21300000, guid: 42935feee29d4ba48adc0342d39c51b2, type: 3}
+  cardArt: {fileID: 21300000, guid: 93d54493b1128104e896e477d6b99e2f, type: 3}

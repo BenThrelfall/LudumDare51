@@ -16,7 +16,7 @@ MonoBehaviour:
   cardDescription: 'Increased Damage
 
     Damage Nearby Enemies'
-  cardArt: {fileID: 21300000, guid: 7a07901ab22c1494b8db0770cf571d12, type: 3}
+  cardArt: {fileID: 21300000, guid: 83c100ffffe6b1a4392cc0e6f9218a5b, type: 3}
   cards:
   - {fileID: 11400000, guid: 814d01fe7c7719d489bfa49a98b467e7, type: 2}
   - {fileID: 11400000, guid: 2740c1ebfee009c4e81d403dc663993f, type: 2}

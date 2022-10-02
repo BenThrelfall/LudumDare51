@@ -18,7 +18,7 @@ MonoBehaviour:
     Increase Move Speed
 
     Increase Fire Rate'
-  cardArt: {fileID: 21300000, guid: 42935feee29d4ba48adc0342d39c51b2, type: 3}
+  cardArt: {fileID: 21300000, guid: adb2fe431fd94454fa9f41bb8c2074db, type: 3}
   cards:
   - {fileID: 11400000, guid: 2b18a63387bf3b540ba6b787d7176b1d, type: 2}
   - {fileID: 11400000, guid: 7f77a85fb1026d340baa823e868a6b5e, type: 2}
