@@ -32,6 +32,8 @@ public class ObjectSpawner : MonoBehaviour {
 
 }
 
+#if UNITY_EDITOR
+
 [CustomEditor(typeof(ObjectSpawner))]
 public class ObjectSpawnerEditor : Editor {
 
@@ -48,3 +50,6 @@ public class ObjectSpawnerEditor : Editor {
     }
 
 }
+
+
+#endif

@@ -10,9 +10,8 @@ public class DamageAndDespawnOnImpactBehavour : MonoBehaviour {
 
         Health health = collision.GetComponent<Health>();
 
-        if (health == null) return;
+        if (health != null) health.TakeDamage(GlobalPlayer.instance.baseProjectileDamage * projectileDamageCoefficent); 
 
-        health.TakeDamage(GlobalPlayer.instance.baseProjectileDamage * projectileDamageCoefficent);
         Destroy(gameObject);
 
     }

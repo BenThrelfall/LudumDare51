@@ -14,12 +14,37 @@ public class Health : MonoBehaviour {
     public event Action OnDie;
     public event Action OnChangeHealth;
 
+    public bool shouldFlash = true;
+    bool isFlashing = false;
+    float flashTime = 0f;
+
+    SpriteRenderer spriteRenderer;
+
+    private void Awake() {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     private void Start() {
         CurrentHealth = maxHealth;
     }
 
+    private void Update() {
+
+        if (Time.time < flashTime && !isFlashing) {
+            spriteRenderer.material = MaterialStorage.instance.flashMat;
+            isFlashing = true;
+        }
+        else if (Time.time > flashTime && isFlashing) {
+            spriteRenderer.material = MaterialStorage.instance.spriteDefault;
+            isFlashing = false;
+        }
+
+
+    }
+
     public void TakeDamage(float amount) {
         CurrentHealth -= amount;
+        flashTime = Time.time + 0.1f;
         if (CurrentHealth <= 0) Die();
     }
 

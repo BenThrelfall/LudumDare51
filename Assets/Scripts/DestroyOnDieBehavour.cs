@@ -13,6 +13,6 @@ public class DestroyOnDieBehavour : MonoBehaviour {
     }
 
     private void DestroyOnDieBehavour_OnDie() {
-        Destroy(gameObject);
+        Destroy(gameObject, 0.09f);
     }
 }
