@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRateCoefficient: 60
   damageCoefficient: 5
-  size: 0.7
+  size: 0.8
   layerMask:
     serializedVersion: 2
     m_Bits: 256

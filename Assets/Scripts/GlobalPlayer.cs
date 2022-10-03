@@ -20,6 +20,7 @@ public class GlobalPlayer : MonoBehaviour {
     public float baseProjectileSpeed;
 
     public float baseProjectileDamage;
+    public int baseProjectilePierce;
 
     public Health playerHealth;
 
@@ -27,8 +28,25 @@ public class GlobalPlayer : MonoBehaviour {
     public float baseEnemyDamage;
     public float baseEnemyMoveSpeed;
 
+    /// <summary>
+    /// Happens once every 5 seconds
+    /// </summary>
+    public float healthRegen = 0f;
+
     private void Awake() {
         instance = this;
+    }
+
+    private void Start() {
+        StartCoroutine(DoHealthRegen());
+    }
+
+    IEnumerator DoHealthRegen() {
+        while (true) {
+            yield return new WaitForSeconds(5f);
+            playerHealth.GetHealed(healthRegen);
+        }
+
     }
 
     public void AddWeapon(GameObject weapon) { 
