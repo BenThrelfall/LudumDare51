@@ -33,6 +33,8 @@ public class GlobalPlayer : MonoBehaviour {
     /// </summary>
     public float healthRegen = 0f;
 
+    public Rigidbody2D rbod;
+
     private void Awake() {
         instance = this;
     }

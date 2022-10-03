@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour {
         rbod.velocity = movementVector.normalized * GlobalPlayer.instance.playerMoveSpeed;
         animator.SetFloat("SquareMoveSpeed", rbod.velocity.sqrMagnitude);
 
-        if (rbod.velocity.x < 0) { 
+        if (rbod.velocity.x > 0) { 
             spriteRenderer.flipX = true;
         }
         else {

@@ -16,5 +16,5 @@ MonoBehaviour:
   cardDescription: 'Kill a nearby enemy instantly
 
     Takes 10 seconds to recharge'
-  cardArt: {fileID: 21300000, guid: adb2fe431fd94454fa9f41bb8c2074db, type: 3}
+  cardArt: {fileID: 21300000, guid: 72163c5bfedabd447b6e42f6ef4d135e, type: 3}
   weapon: {fileID: 2441733620233291830, guid: 0cbb4f8804c795d49a07459af36d9ab1, type: 3}

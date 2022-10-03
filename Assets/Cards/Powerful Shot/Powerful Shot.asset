@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Powerful Shot
   cardDescription: Increase Damage
-  cardArt: {fileID: 21300000, guid: adb2fe431fd94454fa9f41bb8c2074db, type: 3}
+  cardArt: {fileID: 21300000, guid: 1a0fbdf3e30db61489a5cd926e340980, type: 3}
   amount: 0.4

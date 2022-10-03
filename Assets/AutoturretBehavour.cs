@@ -19,7 +19,7 @@ public class AutoturretBehavour : MonoBehaviour {
 
             yield return new WaitForSeconds(60 / (fireRateCoefficient * GlobalPlayer.instance.baseFireRate));
 
-            var col = Physics2D.OverlapCircle(transform.position, 10f, layerMask);
+            var col = Physics2D.OverlapCircle(transform.position, 6f, layerMask);
 
             if (col == null) continue;
 

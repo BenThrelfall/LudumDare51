@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hurtSound: {fileID: -1335682365460923010}
-  maxHealth: 300
+  maxHealth: 500
   currentHealth: 0
   blessed: 0
   shouldFlash: 1
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7171e877ec50d4249bce2391c99ab6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedCoefficent: 1
+  speedCoefficent: 0.8
   rbod: {fileID: 2646631767739609467}
 --- !u!114 &2646631767739609414
 MonoBehaviour:
@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a408e01383c6194998dbf47fe9844e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squaredRange: 2
-  damageCoefficient: 20
+  squaredRange: 1.5
+  damageCoefficient: 40
   attackCooldownCoefficient: 1
 --- !u!114 &8877068021124758214
 MonoBehaviour:

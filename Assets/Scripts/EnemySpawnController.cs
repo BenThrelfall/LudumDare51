@@ -9,7 +9,17 @@ public class EnemySpawnController : MonoBehaviour {
 
     public GameObject RobotOne;
     public GameObject RobotTwo;
+    public GameObject RobotThree;
+    public GameObject RobotFour;
     public GameObject BioOne;
+    public GameObject BioTwo;
+
+    public AnimationCurve robotOneSpawn;
+    public AnimationCurve robotTwoSpawn;
+    public AnimationCurve robotThreeSpawn;
+    public AnimationCurve robotFourSpawn;
+    public AnimationCurve BioOneSpawn;
+    public AnimationCurve BioTwoSpawn;
 
 
     private void Start() {
@@ -20,24 +30,51 @@ public class EnemySpawnController : MonoBehaviour {
     IEnumerator SpawningRoutine() {
 
         while (true) {
-            spawnCoolDown = Mathf.Max(spawnCoolDown - 0.1f, 0.3f);
-            Vector2 spawnPosition = Random.insideUnitCircle.normalized * 10;
-            int spawn = Random.Range(0, 3);
 
-            if (spawn == 0) {
-                Instantiate(RobotOne, playerTrans.position + (Vector3)spawnPosition, Quaternion.identity);
 
+            for (int i = 0; i < Mathf.RoundToInt(5 * robotOneSpawn.Evaluate(Time.timeSinceLevelLoad / 300)); i++) {
+                spawnRandom(RobotOne);
             }
-            else if (spawn == 1) { 
-                Instantiate(RobotTwo, playerTrans.position + (Vector3)spawnPosition, Quaternion.identity);
+
+            for (int i = 0; i < Mathf.RoundToInt(5 * robotThreeSpawn.Evaluate(Time.timeSinceLevelLoad / 300)); i++) {
+                spawnRandom(RobotThree);
             }
-            else {
-                Instantiate(BioOne, playerTrans.position + (Vector3)spawnPosition, Quaternion.identity);
+
+            if (Random.value < robotTwoSpawn.Evaluate(Time.timeSinceLevelLoad / 300)) {
+                spawnRandom(RobotTwo);
             }
+
+            if (Random.value < robotFourSpawn.Evaluate(Time.timeSinceLevelLoad / 300)) {
+                spawnRandom(RobotFour);
+            }
+
+            if (Random.value < BioOneSpawn.Evaluate(Time.timeSinceLevelLoad / 300)) {
+                spawnRandom(BioOne);
+            }
+
+            if (Random.value < BioTwoSpawn.Evaluate(Time.timeSinceLevelLoad / 300)) {
+                spawnRandom(BioTwo);
+            }
+
+
 
             yield return new WaitForSeconds(spawnCoolDown);
         }
 
+    }
+
+    void spawnRandom(GameObject spawnObject) {
+
+        Vector2 spawnPosition;
+
+        if (GlobalPlayer.instance.rbod.velocity.sqrMagnitude == 0 || Random.value < 0.9f) {
+            spawnPosition = Random.insideUnitCircle.normalized * 10;
+        }
+        else {
+            spawnPosition = GlobalPlayer.instance.rbod.velocity.normalized * 10;
+        }
+
+        Instantiate(spawnObject, playerTrans.position + (Vector3)spawnPosition, Quaternion.identity);
     }
 
 }

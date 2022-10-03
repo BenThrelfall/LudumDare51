@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a408e01383c6194998dbf47fe9844e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squaredRange: 2
+  squaredRange: 1.5
   damageCoefficient: 20
   attackCooldownCoefficient: 1
 --- !u!114 &8134214323454888071

@@ -16,7 +16,7 @@ MonoBehaviour:
   cardDescription: 'Increase Damage
 
     One Additional Pierce'
-  cardArt: {fileID: 21300000, guid: adb2fe431fd94454fa9f41bb8c2074db, type: 3}
+  cardArt: {fileID: 21300000, guid: 8a46f2c79cdbf45488cc230d3d40a41f, type: 3}
   cards:
   - {fileID: 11400000, guid: 6fcf3792436124a448882e1cf8887186, type: 2}
   - {fileID: 11400000, guid: f879dc213d4311e46a9a14f2d2abefc0, type: 2}

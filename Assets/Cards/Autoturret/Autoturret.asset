@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Autoturret
   cardDescription: Gain an autoturret
-  cardArt: {fileID: 21300000, guid: adb2fe431fd94454fa9f41bb8c2074db, type: 3}
+  cardArt: {fileID: 21300000, guid: f4750d12cc718494382b1463d7a50b30, type: 3}
   weapon: {fileID: 913375298704427736, guid: cf4569c3311fdfd4bb1845b344ebf7af, type: 3}
