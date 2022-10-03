@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
 
+    [SerializeField] AudioSource hurtSound;
+
     public float maxHealth;
     [SerializeField] float currentHealth; 
     public float CurrentHealth { get {return currentHealth; } private set { currentHealth = Mathf.Min(value, maxHealth); OnChangeHealth?.Invoke(); } }
@@ -45,6 +47,7 @@ public class Health : MonoBehaviour {
     public void TakeDamage(float amount) {
         CurrentHealth -= amount;
         flashTime = Time.time + 0.1f;
+        if (hurtSound != null) hurtSound.Play();
         if (CurrentHealth <= 0) Die();
     }
 

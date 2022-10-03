@@ -17,6 +17,9 @@ public class CardDeckController : MonoBehaviour {
     [SerializeField] Image cardOneImage;
     [SerializeField] Image cardTwoImage;
 
+    [SerializeField] AudioSource pickWarningSound;
+    [SerializeField] AudioSource pickSound;
+
     AbilityCard cardOne;
     AbilityCard cardTwo;
 
@@ -25,6 +28,7 @@ public class CardDeckController : MonoBehaviour {
 
     private void Start() {
         StartCoroutine(DoCardChoice());
+        StartCoroutine(DoSoundLoop());
     }
 
     private void Update() {
@@ -41,6 +45,19 @@ public class CardDeckController : MonoBehaviour {
             cardTwoText.color = Color.red;
         }
 
+    }
+
+    IEnumerator DoSoundLoop() {
+        while (true) {
+
+            yield return new WaitForSeconds(8);
+
+            pickWarningSound.Play();
+
+            yield return new WaitForSeconds(2);
+
+            pickSound.Play();
+        }
     }
 
     IEnumerator DoCardChoice() {
